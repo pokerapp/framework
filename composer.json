@@ -1,0 +1,41 @@
+{
+	"name": "poker/framework",
+	"type": "library",
+	"keywords": ["poker", "framework"],
+	"description": "Poker Framework",
+	"homepage": "https://pokerapp.cn",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "Levine",
+			"email": "phplevine@gmail.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/pokerapp/framework/issues",
+		"source": "https://github.com/pokerapp/framework"
+	},
+	"autoload": {
+		"psr-4": {
+			"poker\\": "src/poker"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"poker\\tests\\": "tests"
+		}
+	},
+	"require": {
+		"php": ">=7.2.0",
+		"ext-json": "*",
+		"ext-mbstring": "*",
+		"monolog/monolog": "^1.24.0",
+		"filp/whoops": "^2.3"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^8.0",
+		"mockery/mockery": "^1.2"
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}
